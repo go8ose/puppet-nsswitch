@@ -41,6 +41,26 @@ class nsswitch::params {
                 $shadow_default     = ['compat']
                 $sudoers_default    = undef
     }
+    'Debian': {
+                $nsswitch_path = '/etc/nsswitch.conf'
+
+                $aliases_default    = undef
+                $automount_default  = undef
+                $bootparams_default = undef
+                $ethers_default     = ['db','files']
+                $group_default      = ['compat']
+                $hosts_default      = ['files','dns']
+                $netgroup_default   = ['nis']
+                $netmasks_default   = undef
+                $networks_default   = ['files']
+                $passwd_default     = ['compat']
+                $protocols_default  = ['db','files']
+                $publickey_default  = undef
+                $rpc_default        = ['db','files']
+                $services_default   = ['db','files']
+                $shadow_default     = ['compat']
+                $sudoers_default    = undef
+    }
     default: { fail("${::operatingsystem} is not a supported operating system.") }
   }
 }
