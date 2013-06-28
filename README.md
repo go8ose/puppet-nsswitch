@@ -5,8 +5,8 @@ should cover the 15 basic databases NSS supports.
 
 ### Defaults
 
-Currenly this module has support for RedHat, CentOS, Amazon Linux, and
-Ubuntu. This module at its very basic will create an nsswitch.conf that
+Currenly this module has support for RedHat, CentOS, Amazon Linux, Ubuntu
+and Debian. This module at its very basic will create an nsswitch.conf that
 uses defaults derived from the distrobution provided nsswitch.conf file.
 These defaults have been verified on the mentioned Distrobutions.
 
